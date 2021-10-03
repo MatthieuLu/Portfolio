@@ -1,0 +1,46 @@
+Week 1:
+- ESD protection testing, learned how to use the ESD gun
+- Accelerometer testing
+- Reviewing schematics, learning about JDM
+- Learning about Jira and Kanban management softwares
+- Learning to use Putty/Teraterm and terminal
+- Learning about network protocols, and how devices interface
+- Learned how to manually update firmware using WinSCP
+
+Week 2:
+- Learning how to debug validation tool.
+- Learning about power busses.
+- Learning how to set up DMMs and connect to computer for analysis.
+- Learned about PCMs (Protection Circuit Module) and how to wake up a battery with one.
+- Practicing insulation on PCB to combat ESD issues.
+- Learned about power lines and why capacitors can't be placed on them to smooth out signal (thus the ripple issue with RF and speakers)
+- Learning about inductors, transistors (MOSFETs), ESD diode placement, pullup resistors, capacitor filters, etc
+- Learning about server communication protocols with the badge and how updates are handled
+- Learning about memory types, EEPROM, NAND, etc.
+- Learning about how/when to isolate components from power lines to decrease noise etc.
+
+Week 3:
+- Learning how to troubleshoot issues (ripple), and how solutions are deduced
+	DC/DC solution, lowering speaker volume, effect on RF, etc
+- Fixed ESD issue (most likely)
+- Getting better at soldering, learning about MetCal technology with Curie point
+- Talked to TJ about audio/acoustics, basics of components
+
+Week 4:
+- Learning about how to use Allegro and check schematics
+- Learning how to do SMT soldering
+- Running tests on ESD and Battery Fuel Gauge
+- Using Multimeters
+- Sitting in on gerber file reviews
+
+Week 5:
+- Modifying badges for ESD
+- Using Oscilloscopes to check power trace stability, and responses to ESD.
+- Sitting in on gerber file reviews, analyzing pros and cons of 10-layer layouts versus 8-layer layouts
+
+Week 6+:
+- Performed stability and charge time tests on P1 chargers
+- Modified battery PCB to allow access to current and voltage sensors while charging
+- Used fluke to record current, voltage, and temperature while charging at different temperatures
+- Checked battery shutdown and wakeup voltages
+- Modified circuit
