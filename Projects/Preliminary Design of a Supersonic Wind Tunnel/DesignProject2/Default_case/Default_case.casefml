@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CASE>
+    <GEOMETRY>
+        <geometry_file_name></geometry_file_name>
+    </GEOMETRY>
+    <MESH_GENERATION/>
+    <INPUT>
+        <RUN>
+            <run_type>SteadyRun</run_type>
+            <is_continued>0</is_continued>
+            <pseudo_time_step>0</pseudo_time_step>
+            <init_file_name></init_file_name>
+        </RUN>
+        <FLOW>
+            <dimensional>1</dimensional>
+            <mach_number>0.1747</mach_number>
+            <reynolds_number>5000000.0</reynolds_number>
+            <reference_temperature>288.15</reference_temperature>
+            <gas_constant>286.87</gas_constant>
+            <specific_heat_ratio>1.4</specific_heat_ratio>
+            <prandtl_number_in_laminar_flow>0.72</prandtl_number_in_laminar_flow>
+            <prandtl_number_in_turbulent_flow>0.9</prandtl_number_in_turbulent_flow>
+            <tubulence_energy_intensity>0.01</tubulence_energy_intensity>
+            <turbulent_viscosity>1.0</turbulent_viscosity>
+            <static_pressure_of_far_field>101325.0</static_pressure_of_far_field>
+            <attack_angle>0.0</attack_angle>
+            <yaw_angle>0.0</yaw_angle>
+            <total_pressure>143129.0</total_pressure>
+            <total_temperature>286.48</total_temperature>
+            <viscosity_method>ConstantViscosityMethod</viscosity_method>
+            <reference_viscosity>1.7894e-05</reference_viscosity>
+            <reference_temperature_for_viscosity>273.15</reference_temperature_for_viscosity>
+            <sutherland_constant_for_viscosity>110.4</sutherland_constant_for_viscosity>
+            <exponent_for_viscosity>0.666667</exponent_for_viscosity>
+            <PIECEWISE_LINEAR_FUNCTION_FOR_VISCOSITY>
+                <interval_count>1</interval_count>
+                <control_points>273.15 273.15</control_points>
+                <control_point_values>1.71608e-05 1.71608e-05</control_point_values>
+            </PIECEWISE_LINEAR_FUNCTION_FOR_VISCOSITY>
+            <PIECEWISE_POLYNOMIAL_FUNCTION_FOR_VISCOSITY>
+                <interval_count>1</interval_count>
+                <control_points>273.15 273.15</control_points>
+                <INTERVAL_POLYNOMIALS>
+                    <polynomial>1.71608e-05</polynomial>
+                </INTERVAL_POLYNOMIALS>
+            </PIECEWISE_POLYNOMIAL_FUNCTION_FOR_VISCOSITY>
+            <thermal_conductivity_method>PrandtlNumberConductivityMethod</thermal_conductivity_method>
+            <reference_thermal_conductivity>0.025</reference_thermal_conductivity>
+            <PIECEWISE_LINEAR_FUNCTION_FOR_THERMAL_CONDUCTIVITY>
+                <interval_count>1</interval_count>
+                <control_points>273.15 273.15</control_points>
+                <control_point_values>0.025 0.025</control_point_values>
+            </PIECEWISE_LINEAR_FUNCTION_FOR_THERMAL_CONDUCTIVITY>
+            <PIECEWISE_POLYNOMIAL_FUNCTION_FOR_THERMAL_CONDUCTIVITY>
+                <interval_count>1</interval_count>
+                <control_points>273.15 273.15</control_points>
+                <INTERVAL_POLYNOMIALS>
+                    <polynomial>0.025</polynomial>
+                </INTERVAL_POLYNOMIALS>
+            </PIECEWISE_POLYNOMIAL_FUNCTION_FOR_THERMAL_CONDUCTIVITY>
+        </FLOW>
+        <ROSTATOR>
+            <turbomachinery>0</turbomachinery>
+            <cascade_type>StraightCascade</cascade_type>
+            <back_pressure>0.707927813371</back_pressure>
+            <mass_flow_rate>-1.0</mass_flow_rate>
+            <exit_pressure_distribution_type>UniformDistribution</exit_pressure_distribution_type>
+            <read_port_bc_from_file>0</read_port_bc_from_file>
+            <BLADE_ROW index="1">
+                <period_count>1</period_count>
+                <rotating_speed>0.0</rotating_speed>
+            </BLADE_ROW>
+        </ROSTATOR>
+        <REFERENCE>
+            <length>1.0</length>
+            <density>1.0</density>
+            <temperature>1.0</temperature>
+            <area>1.0</area>
+            <moment_center>0 0 0</moment_center>
+            <moment_length>1.0</moment_length>
+        </REFERENCE>
+        <CONTROL>
+            <time_step_length>0.0001</time_step_length>
+            <period_count_in_unsteady_run>1</period_count_in_unsteady_run>
+            <time_step_count_per_period_in_unsteady_run>1000</time_step_count_per_period_in_unsteady_run>
+            <interval_of_pseudo_time_step_for_residual_output>10</interval_of_pseudo_time_step_for_residual_output>
+            <interval_of_local_time_step_length_calulate>1</interval_of_local_time_step_length_calulate>
+            <interval_of_pseudo_time_step_for_residual_calculate>1</interval_of_pseudo_time_step_for_residual_calculate>
+            <time_step_count_for_euler_only>0</time_step_count_for_euler_only>
+            <interval_of_untime_step_for_result_output>10000</interval_of_untime_step_for_result_output>
+            <mesh_file_output>0</mesh_file_output>
+            <tecplot_file_output>0</tecplot_file_output>
+            <plt_file_output>0</plt_file_output>
+            <plot3d_file_output>0</plot3d_file_output>
+            <cgns_file_output>0</cgns_file_output>
+            <fout_file_output>1</fout_file_output>
+            <Restart_file_output>1</Restart_file_output>
+            <wall_coefficient_file_output>0</wall_coefficient_file_output>
+            <span_distribution_file_output>0</span_distribution_file_output>
+            <force_coefficient_file_output>0</force_coefficient_file_output>
+        </CONTROL>
+        <NUMERICS>
+            <discrete_type>JSTCenterScheme</discrete_type>
+            <reconstructive_type>Cubic_upwindReconstructive</reconstructive_type>
+            <limiter_type>VanAlbadaLimiter</limiter_type>
+            <residual_smooth_method_in_runge_kutta>AllStageSmooth</residual_smooth_method_in_runge_kutta>
+            <residual_smooth_scheme_in_runge_kutta>CentralWithVariableCoefficients</residual_smooth_scheme_in_runge_kutta>
+            <viscosity_coefficient_calculate_method_in_laminar_flow>ConstantCoefficient</viscosity_coefficient_calculate_method_in_laminar_flow>
+            <cycle_type_of_multi_grid>WCycle</cycle_type_of_multi_grid>
+            <pseudo_time_marching_scheme>ImplicitLU_SGSMarching</pseudo_time_marching_scheme>
+            <second_order_viscosity_coefficient>0.5</second_order_viscosity_coefficient>
+            <fourth_order_viscosity_coefficient>1.0</fourth_order_viscosity_coefficient>
+            <viscosity_scaling_factor>0.5</viscosity_scaling_factor>
+            <entropy_fix_for_roe_scheme>1</entropy_fix_for_roe_scheme>
+            <weight_coefficient_in_runge_kutta>0.25 0.16667 0.375 0.5 1 0</weight_coefficient_in_runge_kutta>
+            <viscosity_weight_coefficient_in_runge_kutta>1 0 0.56 0 0.44 0</viscosity_weight_coefficient_in_runge_kutta>
+            <maximum_space_count_in_gmres>10</maximum_space_count_in_gmres>
+            <pre_process_type_in_gmres>RightGMRESPreProcess</pre_process_type_in_gmres>
+            <lusgs_step_count_before_gmres>10</lusgs_step_count_before_gmres>
+            <implicit_residual_smooth_i_value>0.2</implicit_residual_smooth_i_value>
+            <implicit_residual_smooth_j_value>0.2</implicit_residual_smooth_j_value>
+            <implicit_residual_smooth_k_value>0.2</implicit_residual_smooth_k_value>
+            <damping_coefficient_1_in_euler>0.0</damping_coefficient_1_in_euler>
+            <damping_coefficient_2_in_euler>0.0</damping_coefficient_2_in_euler>
+            <residual_control_loose_factor_in_multi_grid>1.0</residual_control_loose_factor_in_multi_grid>
+            <residual_smooth_factor_in_multi_grid>0.2</residual_smooth_factor_in_multi_grid>
+            <viscosity_coefficient_2_in_jst>1.0</viscosity_coefficient_2_in_jst>
+            <cfl_number_of_turbulent_flow_formula>5.0</cfl_number_of_turbulent_flow_formula>
+            <multiple_row_interface>AreaAverageModel</multiple_row_interface>
+            <pre_process_type_in_low_mach_number>NoLowMachPreProcess</pre_process_type_in_low_mach_number>
+            <vorticity_correction_in_2d_far_field>0</vorticity_correction_in_2d_far_field>
+        </NUMERICS>
+        <MULTILEVEL>
+            <LEVEL index="1">
+                <hierarchy_count>1</hierarchy_count>
+                <iteration_count>50000</iteration_count>
+                <calculate_model>EulerModel</calculate_model>
+                <cfl_number_1>-5.0</cfl_number_1>
+                <cfl_number_2>5.0</cfl_number_2>
+            </LEVEL>
+        </MULTILEVEL>
+        <GRID>
+            <endianness_of_mesh_output>LittleEndian</endianness_of_mesh_output>
+        </GRID>
+        <MULTIUSERDEFINEDSCALAR/>
+        <MULTIUSERDEFINEDFUNCTION/>
+    </INPUT>
+    <MESH>
+        <mesh_file_name>Default_case.mesh</mesh_file_name>
+        <mesh_source>OpenedSource</mesh_source>
+        <subsurface_state>SubsurfaceIsSet</subsurface_state>
+        <BLOCK index="1">
+            <dimensions>901 77 2</dimensions>
+            <blade_row_info_index>1</blade_row_info_index>
+            <__header__>  f_no  face   ist   ied   jst   jed   kst   ked  neib   suf   ori   nbd    </__header__>
+            <SUBSURFACE>     1     1     1     1     1    77     1     2   -30     0     0     0    </SUBSURFACE>
+            <SUBSURFACE>     2     2     1   901     1     1     1     2   -15     0     0     0    </SUBSURFACE>
+            <SUBSURFACE>     3     3     1   901     1    77     1     1   -50     0     0     0    </SUBSURFACE>
+            <SUBSURFACE>     4     4   901   901     1    77     1     2   -40     0     0     0    </SUBSURFACE>
+            <SUBSURFACE>     5     5     1   901    77    77     1     2   -15     0     0     0    </SUBSURFACE>
+            <SUBSURFACE>     6     6     1   901     1    77     2     2   -50     0     0     0    </SUBSURFACE>
+        </BLOCK>
+        <SUBSURFACE_DETAIL block_index="1" subsurface_index="1">
+            <flow_direction_specification>FlowAngle</flow_direction_specification>
+            <flow_direction_coordinate_system>Cartesian</flow_direction_coordinate_system>
+            <pressure_extrapolation_method>Zeroth_Order</pressure_extrapolation_method>
+            <specify_mass_flow_rate>0</specify_mass_flow_rate>
+            <target_mass_flow_rate>0.0</target_mass_flow_rate>
+            <flow_angle>0.0</flow_angle>
+            <sideslip_angle>0.0</sideslip_angle>
+            <flow_direction>1 0 0</flow_direction>
+            <total_pressure>143129.0</total_pressure>
+            <velocity_magnitude>59.0779207403</velocity_magnitude>
+            <total_temperature>286.48</total_temperature>
+            <supersonic_or_initial_pressure>140112.713862</supersonic_or_initial_pressure>
+            <turbulent_intensity>0.01</turbulent_intensity>
+            <turbulent_viscosity_ratio>1.0</turbulent_viscosity_ratio>
+        </SUBSURFACE_DETAIL>
+    </MESH>
+    <RUN_SOLVER>
+        <precision_is_double>1</precision_is_double>
+        <processes_number>1</processes_number>
+        <run_solver_log_file_name>Default_case.log</run_solver_log_file_name>
+        <run_local>1</run_local>
+        <connection_name></connection_name>
+        <connection_working_path></connection_working_path>
+    </RUN_SOLVER>
+    <SOLUTION>
+        <SOLUTION_FILE_DATA>
+            <solution_file_name>Default_case.res.dat</solution_file_name>
+            <solution_file_status>TecplotASCII</solution_file_status>
+        </SOLUTION_FILE_DATA>
+        <SOLUTION_FILE_DATA>
+            <solution_file_name>Default_case_005000.fout</solution_file_name>
+            <solution_file_status>FOUT</solution_file_status>
+        </SOLUTION_FILE_DATA>
+        <SOLUTION_FILE_DATA>
+            <solution_file_name>Default_case_050000.fout</solution_file_name>
+            <solution_file_status>FOUT</solution_file_status>
+        </SOLUTION_FILE_DATA>
+        <description></description>
+    </SOLUTION>
+    <POST_PROCESS/>
+    <description></description>
+</CASE>
